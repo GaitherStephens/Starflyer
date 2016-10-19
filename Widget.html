@@ -207,7 +207,12 @@
       var widgetIdentifier = "com.gaitherstephens.starflyer";
       var twentyfourhour = twentyfourhourOp;
       var wxRefresh = wxRefreshOp;
+      var useBg = useBgOp;
       var ampm;
+
+      if(!useBg){
+        document.body.style.background = "none";
+      }
 
       // gets date info
       var now = new Date();
